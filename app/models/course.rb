@@ -30,7 +30,7 @@ class Course < ApplicationRecord
         foreign_key: :instructor_id,
         class_name: :User
 
-    has_many: postrequisite,
+    has_many :postrequisites,
         primary_key: :id,
         foreign_key: :prereq_id,
         class_name: :Course, 
